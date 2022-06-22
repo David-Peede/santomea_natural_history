@@ -1,0 +1,276 @@
+substrate,replicate,count,species
+F. c. fernandesiana,cage1,24,D. santomea
+F. c. fernandesiana,cage1,0,D. yakuba
+F. c. fernandesiana,cage1,13,Zaprionus
+F. c. fernandesiana,cage1,6,montium group
+F. c. fernandesiana,cage1,4,other
+F. kamerounesis,cage1,5,D. santomea
+F. kamerounesis,cage1,1,D. yakuba
+F. kamerounesis,cage1,22,Zaprionus
+F. kamerounesis,cage1,10,montium group
+F. kamerounesis,cage1,2,other
+F. mucoso,cage1,1,D. santomea
+F. mucoso,cage1,3,D. yakuba
+F. mucoso,cage1,4,Zaprionus
+F. mucoso,cage1,7,montium group
+F. mucoso,cage1,6,other
+S. ellipticum,cage1,0,D. santomea
+S. ellipticum,cage1,0,D. yakuba
+S. ellipticum,cage1,0,Zaprionus
+S. ellipticum,cage1,0,montium group
+S. ellipticum,cage1,0,other
+C. stelluifer,cage1,0,D. santomea
+C. stelluifer,cage1,0,D. yakuba
+C. stelluifer,cage1,0,Zaprionus
+C. stelluifer,cage1,0,montium group
+C. stelluifer,cage1,0,other
+H. henriquesii,cage1,0,D. santomea
+H. henriquesii,cage1,0,D. yakuba
+H. henriquesii,cage1,0,Zaprionus
+H. henriquesii,cage1,0,montium group
+H. henriquesii,cage1,0,other
+P. subcordata,cage1,0,D. santomea
+P. subcordata,cage1,0,D. yakuba
+P. subcordata,cage1,0,Zaprionus
+P. subcordata,cage1,0,montium group
+P. subcordata,cage1,0,other
+P. acutiflora,cage1,0,D. santomea
+P. acutiflora,cage1,0,D. yakuba
+P. acutiflora,cage1,0,Zaprionus
+P. acutiflora,cage1,0,montium group
+P. acutiflora,cage1,0,other
+A. vogelianum,cage1,0,D. santomea
+A. vogelianum,cage1,0,D. yakuba
+A. vogelianum,cage1,0,Zaprionus
+A. vogelianum,cage1,0,montium group
+A. vogelianum,cage1,0,other
+S. i. ingrata,cage1,0,D. santomea
+S. i. ingrata,cage1,0,D. yakuba
+S. i. ingrata,cage1,0,Zaprionus
+S. i. ingrata,cage1,0,montium group
+S. i. ingrata,cage1,2,other
+P. guajava,cage1,0,D. santomea
+P. guajava,cage1,33,D. yakuba
+P. guajava,cage1,24,Zaprionus
+P. guajava,cage1,1,montium group
+P. guajava,cage1,17,other
+F. c. fernandesiana,cage2,55,D. santomea
+F. c. fernandesiana,cage2,2,D. yakuba
+F. c. fernandesiana,cage2,24,Zaprionus
+F. c. fernandesiana,cage2,31,montium group
+F. c. fernandesiana,cage2,19,other
+F. kamerounesis,cage2,3,D. santomea
+F. kamerounesis,cage2,4,D. yakuba
+F. kamerounesis,cage2,22,Zaprionus
+F. kamerounesis,cage2,19,montium group
+F. kamerounesis,cage2,6,other
+F. mucoso,cage2,0,D. santomea
+F. mucoso,cage2,5,D. yakuba
+F. mucoso,cage2,2,Zaprionus
+F. mucoso,cage2,0,montium group
+F. mucoso,cage2,0,other
+S. ellipticum,cage2,0,D. santomea
+S. ellipticum,cage2,0,D. yakuba
+S. ellipticum,cage2,0,Zaprionus
+S. ellipticum,cage2,0,montium group
+S. ellipticum,cage2,0,other
+C. stelluifer,cage2,0,D. santomea
+C. stelluifer,cage2,0,D. yakuba
+C. stelluifer,cage2,0,Zaprionus
+C. stelluifer,cage2,0,montium group
+C. stelluifer,cage2,0,other
+H. henriquesii,cage2,0,D. santomea
+H. henriquesii,cage2,0,D. yakuba
+H. henriquesii,cage2,0,Zaprionus
+H. henriquesii,cage2,0,montium group
+H. henriquesii,cage2,0,other
+P. subcordata,cage2,0,D. santomea
+P. subcordata,cage2,0,D. yakuba
+P. subcordata,cage2,0,Zaprionus
+P. subcordata,cage2,0,montium group
+P. subcordata,cage2,0,other
+P. acutiflora,cage2,0,D. santomea
+P. acutiflora,cage2,0,D. yakuba
+P. acutiflora,cage2,0,Zaprionus
+P. acutiflora,cage2,0,montium group
+P. acutiflora,cage2,0,other
+A. vogelianum,cage2,0,D. santomea
+A. vogelianum,cage2,0,D. yakuba
+A. vogelianum,cage2,0,Zaprionus
+A. vogelianum,cage2,0,montium group
+A. vogelianum,cage2,0,other
+S. i. ingrata,cage2,0,D. santomea
+S. i. ingrata,cage2,0,D. yakuba
+S. i. ingrata,cage2,0,Zaprionus
+S. i. ingrata,cage2,0,montium group
+S. i. ingrata,cage2,0,other
+P. guajava,cage2,1,D. santomea
+P. guajava,cage2,24,D. yakuba
+P. guajava,cage2,16,Zaprionus
+P. guajava,cage2,3,montium group
+P. guajava,cage2,31,other
+F. c. fernandesiana,cage3,3,D. santomea
+F. c. fernandesiana,cage3,0,D. yakuba
+F. c. fernandesiana,cage3,16,Zaprionus
+F. c. fernandesiana,cage3,4,montium group
+F. c. fernandesiana,cage3,3,other
+F. kamerounesis,cage3,0,D. santomea
+F. kamerounesis,cage3,2,D. yakuba
+F. kamerounesis,cage3,13,Zaprionus
+F. kamerounesis,cage3,5,montium group
+F. kamerounesis,cage3,6,other
+F. mucoso,cage3,0,D. santomea
+F. mucoso,cage3,2,D. yakuba
+F. mucoso,cage3,1,Zaprionus
+F. mucoso,cage3,5,montium group
+F. mucoso,cage3,10,other
+S. ellipticum,cage3,0,D. santomea
+S. ellipticum,cage3,0,D. yakuba
+S. ellipticum,cage3,0,Zaprionus
+S. ellipticum,cage3,0,montium group
+S. ellipticum,cage3,0,other
+C. stelluifer,cage3,0,D. santomea
+C. stelluifer,cage3,0,D. yakuba
+C. stelluifer,cage3,0,Zaprionus
+C. stelluifer,cage3,0,montium group
+C. stelluifer,cage3,0,other
+H. henriquesii,cage3,0,D. santomea
+H. henriquesii,cage3,0,D. yakuba
+H. henriquesii,cage3,0,Zaprionus
+H. henriquesii,cage3,0,montium group
+H. henriquesii,cage3,0,other
+P. subcordata,cage3,0,D. santomea
+P. subcordata,cage3,0,D. yakuba
+P. subcordata,cage3,0,Zaprionus
+P. subcordata,cage3,0,montium group
+P. subcordata,cage3,0,other
+P. acutiflora,cage3,0,D. santomea
+P. acutiflora,cage3,0,D. yakuba
+P. acutiflora,cage3,0,Zaprionus
+P. acutiflora,cage3,0,montium group
+P. acutiflora,cage3,0,other
+A. vogelianum,cage3,0,D. santomea
+A. vogelianum,cage3,0,D. yakuba
+A. vogelianum,cage3,0,Zaprionus
+A. vogelianum,cage3,0,montium group
+A. vogelianum,cage3,0,other
+S. i. ingrata,cage3,0,D. santomea
+S. i. ingrata,cage3,0,D. yakuba
+S. i. ingrata,cage3,0,Zaprionus
+S. i. ingrata,cage3,0,montium group
+S. i. ingrata,cage3,0,other
+P. guajava,cage3,0,D. santomea
+P. guajava,cage3,39,D. yakuba
+P. guajava,cage3,25,Zaprionus
+P. guajava,cage3,46,montium group
+P. guajava,cage3,12,other
+F. c. fernandesiana,cage4,13,D. santomea
+F. c. fernandesiana,cage4,0,D. yakuba
+F. c. fernandesiana,cage4,4,Zaprionus
+F. c. fernandesiana,cage4,25,montium group
+F. c. fernandesiana,cage4,9,other
+F. kamerounesis,cage4,2,D. santomea
+F. kamerounesis,cage4,34,D. yakuba
+F. kamerounesis,cage4,16,Zaprionus
+F. kamerounesis,cage4,49,montium group
+F. kamerounesis,cage4,18,other
+F. mucoso,cage4,1,D. santomea
+F. mucoso,cage4,4,D. yakuba
+F. mucoso,cage4,22,Zaprionus
+F. mucoso,cage4,10,montium group
+F. mucoso,cage4,5,other
+S. ellipticum,cage4,0,D. santomea
+S. ellipticum,cage4,0,D. yakuba
+S. ellipticum,cage4,0,Zaprionus
+S. ellipticum,cage4,0,montium group
+S. ellipticum,cage4,0,other
+C. stelluifer,cage4,0,D. santomea
+C. stelluifer,cage4,0,D. yakuba
+C. stelluifer,cage4,0,Zaprionus
+C. stelluifer,cage4,0,montium group
+C. stelluifer,cage4,0,other
+H. henriquesii,cage4,0,D. santomea
+H. henriquesii,cage4,0,D. yakuba
+H. henriquesii,cage4,0,Zaprionus
+H. henriquesii,cage4,0,montium group
+H. henriquesii,cage4,0,other
+P. subcordata,cage4,0,D. santomea
+P. subcordata,cage4,0,D. yakuba
+P. subcordata,cage4,0,Zaprionus
+P. subcordata,cage4,0,montium group
+P. subcordata,cage4,0,other
+P. acutiflora,cage4,0,D. santomea
+P. acutiflora,cage4,0,D. yakuba
+P. acutiflora,cage4,0,Zaprionus
+P. acutiflora,cage4,0,montium group
+P. acutiflora,cage4,0,other
+A. vogelianum,cage4,0,D. santomea
+A. vogelianum,cage4,0,D. yakuba
+A. vogelianum,cage4,0,Zaprionus
+A. vogelianum,cage4,0,montium group
+A. vogelianum,cage4,0,other
+S. i. ingrata,cage4,0,D. santomea
+S. i. ingrata,cage4,0,D. yakuba
+S. i. ingrata,cage4,0,Zaprionus
+S. i. ingrata,cage4,0,montium group
+S. i. ingrata,cage4,0,other
+P. guajava,cage4,0,D. santomea
+P. guajava,cage4,43,D. yakuba
+P. guajava,cage4,27,Zaprionus
+P. guajava,cage4,0,montium group
+P. guajava,cage4,2,other
+F. c. fernandesiana,cage5,28,D. santomea
+F. c. fernandesiana,cage5,10,D. yakuba
+F. c. fernandesiana,cage5,31,Zaprionus
+F. c. fernandesiana,cage5,11,montium group
+F. c. fernandesiana,cage5,5,other
+F. kamerounesis,cage5,1,D. santomea
+F. kamerounesis,cage5,32,D. yakuba
+F. kamerounesis,cage5,9,Zaprionus
+F. kamerounesis,cage5,0,montium group
+F. kamerounesis,cage5,18,other
+F. mucoso,cage5,0,D. santomea
+F. mucoso,cage5,27,D. yakuba
+F. mucoso,cage5,36,Zaprionus
+F. mucoso,cage5,2,montium group
+F. mucoso,cage5,4,other
+S. ellipticum,cage5,0,D. santomea
+S. ellipticum,cage5,0,D. yakuba
+S. ellipticum,cage5,0,Zaprionus
+S. ellipticum,cage5,0,montium group
+S. ellipticum,cage5,0,other
+C. stelluifer,cage5,0,D. santomea
+C. stelluifer,cage5,0,D. yakuba
+C. stelluifer,cage5,0,Zaprionus
+C. stelluifer,cage5,0,montium group
+C. stelluifer,cage5,0,other
+H. henriquesii,cage5,0,D. santomea
+H. henriquesii,cage5,0,D. yakuba
+H. henriquesii,cage5,0,Zaprionus
+H. henriquesii,cage5,0,montium group
+H. henriquesii,cage5,0,other
+P. subcordata,cage5,0,D. santomea
+P. subcordata,cage5,0,D. yakuba
+P. subcordata,cage5,0,Zaprionus
+P. subcordata,cage5,0,montium group
+P. subcordata,cage5,0,other
+P. acutiflora,cage5,0,D. santomea
+P. acutiflora,cage5,0,D. yakuba
+P. acutiflora,cage5,0,Zaprionus
+P. acutiflora,cage5,0,montium group
+P. acutiflora,cage5,0,other
+A. vogelianum,cage5,0,D. santomea
+A. vogelianum,cage5,0,D. yakuba
+A. vogelianum,cage5,0,Zaprionus
+A. vogelianum,cage5,0,montium group
+A. vogelianum,cage5,0,other
+S. i. ingrata,cage5,0,D. santomea
+S. i. ingrata,cage5,0,D. yakuba
+S. i. ingrata,cage5,0,Zaprionus
+S. i. ingrata,cage5,0,montium group
+S. i. ingrata,cage5,0,other
+P. guajava,cage5,0,D. santomea
+P. guajava,cage5,20,D. yakuba
+P. guajava,cage5,57,Zaprionus
+P. guajava,cage5,2,montium group
+P. guajava,cage5,10,other

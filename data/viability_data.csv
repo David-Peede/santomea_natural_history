@@ -1,0 +1,141 @@
+substrate,species,replicate,larvae,adults,proportion
+F. kamerounesis,D. santomea,1,50,10,0.2
+F. mucoso,D. santomea,1,48,4,0.083333333
+Cornmeal,D. santomea,1,43,22,0.511627907
+F. c. fernandesiana,D. santomea,2,49,25,0.510204082
+F. kamerounesis,D. santomea,2,45,4,0.088888889
+F. mucoso,D. santomea,2,47,10,0.212765957
+Cornmeal,D. santomea,2,46,19,0.413043478
+F. c. fernandesiana,D. santomea,3,50,26,0.52
+F. kamerounesis,D. santomea,3,46,11,0.239130435
+F. mucoso,D. santomea,3,46,7,0.152173913
+Cornmeal,D. santomea,3,44,20,0.454545455
+F. c. fernandesiana,D. santomea,4,50,19,0.38
+F. kamerounesis,D. santomea,4,45,2,0.044444444
+F. mucoso,D. santomea,4,50,18,0.36
+Cornmeal,D. santomea,4,42,23,0.547619048
+F. c. fernandesiana,D. santomea,5,44,31,0.704545455
+F. kamerounesis,D. santomea,5,48,11,0.229166667
+F. mucoso,D. santomea,5,48,4,0.083333333
+Cornmeal,D. santomea,5,48,24,0.5
+F. c. fernandesiana,D. santomea,6,45,19,0.422222222
+F. kamerounesis,D. santomea,6,46,4,0.086956522
+F. mucoso,D. santomea,6,47,7,0.14893617
+Cornmeal,D. santomea,6,50,28,0.56
+F. c. fernandesiana,D. santomea,7,49,22,0.448979592
+F. kamerounesis,D. santomea,7,50,6,0.12
+F. mucoso,D. santomea,7,51,9,0.176470588
+Cornmeal,D. santomea,7,46,25,0.543478261
+F. c. fernandesiana,D. santomea,8,44,27,0.613636364
+F. kamerounesis,D. santomea,8,46,4,0.086956522
+F. mucoso,D. santomea,8,45,15,0.333333333
+Cornmeal,D. santomea,8,47,21,0.446808511
+F. c. fernandesiana,D. santomea,9,46,30,0.652173913
+F. kamerounesis,D. santomea,9,47,13,0.276595745
+F. mucoso,D. santomea,9,49,9,0.183673469
+Cornmeal,D. santomea,9,49,18,0.367346939
+F. c. fernandesiana,D. santomea,10,48,22,0.458333333
+F. kamerounesis,D. santomea,10,45,10,0.222222222
+F. mucoso,D. santomea,10,44,14,0.318181818
+Cornmeal,D. santomea,10,50,32,0.64
+F. c. fernandesiana,D. santomea,11,49,28,0.571428571
+F. kamerounesis,D. santomea,11,50,3,0.06
+F. mucoso,D. santomea,11,53,5,0.094339623
+Cornmeal,D. santomea,11,50,24,0.48
+F. c. fernandesiana,D. santomea,12,52,26,0.5
+F. kamerounesis,D. santomea,12,49,14,0.285714286
+F. mucoso,D. santomea,12,50,12,0.24
+Cornmeal,D. santomea,12,42,24,0.571428571
+F. c. fernandesiana,D. santomea,13,49,19,0.387755102
+F. kamerounesis,D. santomea,13,50,10,0.2
+F. mucoso,D. santomea,13,50,4,0.08
+Cornmeal,D. santomea,13,49,19,0.387755102
+F. c. fernandesiana,D. santomea,14,52,29,0.557692308
+F. kamerounesis,D. santomea,14,44,20,0.454545455
+F. mucoso,D. santomea,14,48,5,0.104166667
+Cornmeal,D. santomea,14,48,16,0.333333333
+F. c. fernandesiana,D. santomea,15,45,32,0.711111111
+F. kamerounesis,D. santomea,15,50,11,0.22
+F. mucoso,D. santomea,15,44,21,0.477272727
+Cornmeal,D. santomea,15,47,19,0.404255319
+F. c. fernandesiana,D. santomea,16,46,31,0.673913043
+F. kamerounesis,D. santomea,16,47,18,0.382978723
+F. mucoso,D. santomea,16,44,20,0.454545455
+Cornmeal,D. santomea,16,45,24,0.533333333
+F. c. fernandesiana,D. santomea,17,45,24,0.533333333
+F. kamerounesis,D. santomea,17,48,20,0.416666667
+F. mucoso,D. santomea,17,49,17,0.346938776
+Cornmeal,D. santomea,17,49,25,0.510204082
+F. c. fernandesiana,D. santomea,18,47,26,0.553191489
+F. kamerounesis,D. santomea,18,49,9,0.183673469
+F. mucoso,D. santomea,18,50,10,0.2
+Cornmeal,D. santomea,18,48,28,0.583333333
+F. c. fernandesiana,D. yakuba,1,52,31,0.596153846
+F. kamerounesis,D. yakuba,1,49,29,0.591836735
+F. mucoso,D. yakuba,1,47,26,0.553191489
+Cornmeal,D. yakuba,1,50,24,0.48
+F. c. fernandesiana,D. yakuba,2,48,25,0.520833333
+F. kamerounesis,D. yakuba,2,49,20,0.408163265
+F. mucoso,D. yakuba,2,50,19,0.38
+Cornmeal,D. yakuba,2,49,22,0.448979592
+F. c. fernandesiana,D. yakuba,3,50,34,0.68
+F. kamerounesis,D. yakuba,3,47,20,0.425531915
+F. mucoso,D. yakuba,3,46,32,0.695652174
+Cornmeal,D. yakuba,3,49,33,0.673469388
+F. c. fernandesiana,D. yakuba,4,50,29,0.58
+F. kamerounesis,D. yakuba,4,49,28,0.571428571
+F. mucoso,D. yakuba,4,50,22,0.44
+Cornmeal,D. yakuba,4,50,27,0.54
+F. c. fernandesiana,D. yakuba,5,50,31,0.62
+F. kamerounesis,D. yakuba,5,44,30,0.681818182
+F. mucoso,D. yakuba,5,48,25,0.520833333
+Cornmeal,D. yakuba,5,45,29,0.644444444
+F. c. fernandesiana,D. yakuba,6,49,32,0.653061224
+F. kamerounesis,D. yakuba,6,47,30,0.638297872
+F. mucoso,D. yakuba,6,48,19,0.395833333
+Cornmeal,D. yakuba,6,50,5,0.1
+F. c. fernandesiana,D. yakuba,7,49,18,0.367346939
+F. kamerounesis,D. yakuba,7,51,29,0.568627451
+F. mucoso,D. yakuba,7,49,31,0.632653061
+Cornmeal,D. yakuba,7,50,30,0.6
+F. c. fernandesiana,D. yakuba,8,45,22,0.488888889
+F. kamerounesis,D. yakuba,8,49,19,0.387755102
+F. mucoso,D. yakuba,8,47,23,0.489361702
+Cornmeal,D. yakuba,8,49,40,0.816326531
+F. c. fernandesiana,D. yakuba,9,48,39,0.8125
+F. kamerounesis,D. yakuba,9,50,29,0.58
+F. mucoso,D. yakuba,9,50,33,0.66
+Cornmeal,D. yakuba,9,48,34,0.708333333
+F. c. fernandesiana,D. yakuba,10,47,24,0.510638298
+F. kamerounesis,D. yakuba,10,49,30,0.612244898
+F. mucoso,D. yakuba,10,50,31,0.62
+Cornmeal,D. yakuba,10,50,28,0.56
+F. c. fernandesiana,D. yakuba,11,50,7,0.14
+F. kamerounesis,D. yakuba,11,46,34,0.739130435
+F. mucoso,D. yakuba,11,49,22,0.448979592
+Cornmeal,D. yakuba,11,49,19,0.387755102
+F. c. fernandesiana,D. yakuba,12,50,14,0.28
+F. kamerounesis,D. yakuba,12,51,14,0.274509804
+F. mucoso,D. yakuba,12,50,32,0.64
+Cornmeal,D. yakuba,12,48,29,0.604166667
+F. c. fernandesiana,D. yakuba,13,49,31,0.632653061
+F. kamerounesis,D. yakuba,13,50,29,0.58
+F. mucoso,D. yakuba,13,49,18,0.367346939
+Cornmeal,D. yakuba,13,45,33,0.733333333
+F. kamerounesis,D. yakuba,14,49,31,0.632653061
+F. mucoso,D. yakuba,14,47,39,0.829787234
+Cornmeal,D. yakuba,14,50,29,0.58
+F. c. fernandesiana,D. yakuba,15,50,15,0.3
+F. mucoso,D. yakuba,15,50,31,0.62
+Cornmeal,D. yakuba,15,49,23,0.469387755
+F. c. fernandesiana,D. yakuba,16,48,29,0.604166667
+F. kamerounesis,D. yakuba,16,47,15,0.319148936
+F. mucoso,D. yakuba,16,49,25,0.510204082
+Cornmeal,D. yakuba,16,50,24,0.48
+F. c. fernandesiana,D. yakuba,17,48,31,0.645833333
+F. kamerounesis,D. yakuba,17,49,18,0.367346939
+F. mucoso,D. yakuba,17,50,11,0.22
+Cornmeal,D. yakuba,17,49,18,0.367346939
+F. c. fernandesiana,D. yakuba,18,50,26,0.52
+F. kamerounesis,D. yakuba,18,48,10,0.208333333
+Cornmeal,D. yakuba,18,50,24,0.48
