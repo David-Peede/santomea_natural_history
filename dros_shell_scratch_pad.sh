@@ -550,6 +550,56 @@ sbatch -J ${dros}_${chrom}_filtered_zarr -N 1 -n 1 -t 1:00:00 --mem=2G --account
 done; done
 
 
+# Calculate PBS for all sites.
+for dros in san yak; do for chrom in 2L 2R 3L 3R 4 X; do
+sbatch -J ${dros}_${chrom}_pbs -N 1 -n 1 -t 1:00:00 --mem=5G --account=ccmb-condo -o logs/${dros}_${chrom}_pbs-%A.out -e logs/${dros}_${chrom}_pbs-%A.err --mail-type=FAIL --mail-user=david_peede@brown.edu --wrap="module load anaconda/3-5.2.0; source /gpfs/runtime/opt/anaconda/3-5.2.0/etc/profile.d/conda.sh; conda activate anc_der_intro_env; python chrom_pbs.py ${dros} ${chrom}"
+done; done
+
+
+# Calculate PBS for all orthologs.
+for dros in san yak; do
+sbatch -J ${dros}_ortho_pbs -N 1 -n 1 -t 12:00:00 --mem=5G --account=ccmb-condo -o logs/${dros}_ortho_pbs-%A.out -e logs/${dros}_ortho_pbs-%A.err --mail-type=FAIL --mail-user=david_peede@brown.edu --wrap="module load anaconda/3-5.2.0; source /gpfs/runtime/opt/anaconda/3-5.2.0/etc/profile.d/conda.sh; conda activate anc_der_intro_env; python ortholog_pbs.py ${dros}"
+done
+
+
+# Perform bootstrapping.
+for dros in san yak; do
+sbatch -J ${dros}_bootstrap_pbs -N 1 -n 1 -t 12:00:00 --mem=5G --account=ccmb-condo -o logs/${dros}_bootstrap_pbs-%A.out -e logs/${dros}_bootstrap_pbs-%A.err --mail-type=FAIL --mail-user=david_peede@brown.edu --wrap="module load anaconda/3-5.2.0; source /gpfs/runtime/opt/anaconda/3-5.2.0/etc/profile.d/conda.sh; conda activate anc_der_intro_env; python bootstrap_pbs.py ${dros}"
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+grep 'Gr[0-9]' orthogroup_mel_san_yak_mapping.txt
+grep 'Or[0-9]' orthogroup_mel_san_yak_mapping.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
