@@ -35,16 +35,20 @@ def calc_pbs(gt, pop_a, pop_b, pop_c):
     a_b_raw_fst = a_b_num / a_b_den
     a_c_raw_fst = a_c_num / a_c_den
     c_b_raw_fst = c_b_num / c_b_den
-    # Correct for negative Fst values.
-    a_b_fst = np.where(a_b_raw_fst < 0, 0, a_b_raw_fst)
-    a_c_fst = np.where(a_c_raw_fst < 0, 0, a_c_raw_fst)
-    c_b_fst = np.where(c_b_raw_fst < 0, 0, c_b_raw_fst)
+    # Correct for Fst values of 1 that will lead to inf.
+    a_b_fst = np.where(a_b_raw_fst == 1, 0.99999, a_b_raw_fst)
+    a_c_fst = np.where(a_c_raw_fst == 1, 0.99999, a_c_raw_fst)
+    c_b_fst = np.where(c_b_raw_fst == 1, 0.99999, c_b_raw_fst)
+    # Calculate divergence.
+    a_b_t = -np.log(1 - a_b_fst)
+    a_c_t = -np.log(1 - a_c_fst)
+    c_b_t = -np.log(1 - c_b_fst)
+    # Calculate the raw PBS.
+    raw_pbs = (a_b_t + a_c_t - c_b_t) / 2
+    # Calculate the normalization factor.
+    norm = 1 + (a_b_t + a_c_t + c_b_t) / 2
     # Calculate PBS.
-    pbs = (
-        ((np.log(1.0 - a_b_fst) * -1.0) +\
-         (np.log(1.0 - a_c_fst) * -1.0) -\
-         (np.log(1.0 - c_b_fst) * -1.0)) / float(2)
-    )
+    pbs = raw_pbs / norm
     return pbs, np.nanmean(pbs)
 
 # Define a function to perform bootstrapping.
@@ -77,7 +81,7 @@ def pbs_bootstraps(reference):
     # Intialize a counter. 
     idx = 0
     # Intialize a results matrix to store the results.
-    results_mat = np.empty((10_000, 7))
+    results_mat = np.empty((10_000, 7), dtype=object)
     # For one billion tries....
     for _ in range(1_000_000_000):
         # Randomly select a chromosome.
