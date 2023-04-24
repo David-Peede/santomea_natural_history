@@ -8,6 +8,8 @@ import zarr
 
 # sys.argv[1] = refrence
 
+# Ignore divide by 0/np.nan error and encode as np.nan's.
+np.seterr(divide='ignore', invalid='ignore')
 
 # Define a function to load genotyope and positions arrays.
 def load_callset_pos(prefix, chrom):
@@ -22,7 +24,7 @@ def load_callset_pos(prefix, chrom):
     return geno, pos
 
 # Define a function to calculate PBS.
-def calc_pbs(gt, pop_a, pop_b, pop_c):
+def calc_pbs_n1(gt, pop_a, pop_b, pop_c):
     # Determine allele counts.
     a_ac = gt.take(pop_a, axis=1).count_alleles()
     b_ac = gt.take(pop_b, axis=1).count_alleles()
@@ -36,9 +38,13 @@ def calc_pbs(gt, pop_a, pop_b, pop_c):
     a_c_raw_fst = a_c_num / a_c_den
     c_b_raw_fst = c_b_num / c_b_den
     # Correct for Fst values of 1 that will lead to inf.
-    a_b_fst = np.where(a_b_raw_fst == 1, 0.99999, a_b_raw_fst)
-    a_c_fst = np.where(a_c_raw_fst == 1, 0.99999, a_c_raw_fst)
-    c_b_fst = np.where(c_b_raw_fst == 1, 0.99999, c_b_raw_fst)
+    a_b_fst_raw = np.where(a_b_raw_fst == 1, 0.99999, a_b_raw_fst)
+    a_c_fst_raw = np.where(a_c_raw_fst == 1, 0.99999, a_c_raw_fst)
+    c_b_fst_raw = np.where(c_b_raw_fst == 1, 0.99999, c_b_raw_fst)
+    # Correct for negative Fst values.
+    a_b_fst = np.where(a_b_fst_raw < 0, 0, a_b_fst_raw)
+    a_c_fst = np.where(a_c_fst_raw < 0, 0, a_c_fst_raw)
+    c_b_fst = np.where(c_b_fst_raw < 0, 0, c_b_fst_raw)
     # Calculate divergence.
     a_b_t = -np.log(1 - a_b_fst)
     a_c_t = -np.log(1 - a_c_fst)
@@ -49,7 +55,13 @@ def calc_pbs(gt, pop_a, pop_b, pop_c):
     norm = 1 + (a_b_t + a_c_t + c_b_t) / 2
     # Calculate PBS.
     pbs = raw_pbs / norm
-    return pbs, np.nanmean(pbs)
+    # If pbs is an empty array...
+    if pbs.size == 0:
+        # Return the results.
+        return pbs, np.nan
+    # Else...
+    else:
+        return pbs, np.nanmean(pbs)
 
 # Define a function to calculate pbs for each orthologous gene.
 def pbs_genes(refrence):
@@ -65,6 +77,8 @@ def pbs_genes(refrence):
     for pop in ['san', 'yak_symp', 'yak_allo', 'tei']:
         # Fill the dictionary.
         idx_dicc[pop] = meta_df[meta_df['population'] == pop].index.values
+    # Fill the dictionary for the last population.
+    idx_dicc['yak'] = np.concatenate((idx_dicc['yak_allo'], idx_dicc['yak_symp']))
     # Load the ortholog data frame.
     ortho_df = pd.read_csv(
         f'../annotations/{refrence}_ortholog_qc_passed_coords.txt', sep='\t',
@@ -75,7 +89,7 @@ def pbs_genes(refrence):
     starts = ortho_df['start'].values
     ends = ortho_df['end'].values
     # Intialize a results matrix to store the results.
-    results_mat = np.empty((ortho_df.shape[0], 4))
+    results_mat = np.empty((ortho_df.shape[0], 5))
     # For every gene.
     for gene in range(ortho_df.shape[0]):
         # Grab the chromsome, start, and end positions.
@@ -86,25 +100,30 @@ def pbs_genes(refrence):
         callset, all_pos = load_callset_pos(refrence, chromosome)
         # Locate the gene.
         gene_loc = all_pos.locate_range(start, end)
-        # Calculate pbs.
-        _, san_yak_symp_yak_allo = calc_pbs(
+       # Calculate pbs.
+        _, san_yak_tei = calc_pbs_n1(
+            gt=allel.GenotypeArray(callset[gene_loc]), pop_a=idx_dicc['san'],
+            pop_b=idx_dicc['yak'], pop_c=idx_dicc['tei'],
+        )
+        _, san_yak_symp_yak_allo = calc_pbs_n1(
             gt=allel.GenotypeArray(callset[gene_loc]), pop_a=idx_dicc['san'],
             pop_b=idx_dicc['yak_symp'], pop_c=idx_dicc['yak_allo'],
         )
-        _, san_yak_symp_tei = calc_pbs(
+        _, san_yak_symp_tei = calc_pbs_n1(
             gt=allel.GenotypeArray(callset[gene_loc]), pop_a=idx_dicc['san'],
             pop_b=idx_dicc['yak_symp'], pop_c=idx_dicc['tei'],
         )
-        _, san_yak_allo_tei = calc_pbs(
+        _, san_yak_allo_tei = calc_pbs_n1(
             gt=allel.GenotypeArray(callset[gene_loc]), pop_a=idx_dicc['san'],
             pop_b=idx_dicc['yak_allo'], pop_c=idx_dicc['tei'],
         )
-        _, yak_symp_yak_allo_tei = calc_pbs(
+        _, yak_symp_yak_allo_tei = calc_pbs_n1(
             gt=allel.GenotypeArray(callset[gene_loc]), pop_a=idx_dicc['yak_symp'],
             pop_b=idx_dicc['yak_allo'], pop_c=idx_dicc['tei'],
         )
         # Append the result matrix.
         results_mat[gene, :] = np.array([
+            san_yak_tei,
             san_yak_symp_yak_allo, san_yak_symp_tei,
             san_yak_allo_tei, yak_symp_yak_allo_tei,
         ])
