@@ -1,0 +1,17 @@
+SRR5860641	BS14	san
+SRR5860642	C550_39	san
+SRR5860635	C650_14	san
+SRR5860637	CAR1600	san
+SRR5860636	Rain42	san
+SRR5860638	san_Field3	san
+SRR5860615	Balancha_1	tei
+SRR5860623	cascade_2_1	tei
+SRR5860616	cascade_2_2	tei
+SRR5860622	cascade_2_4	tei
+SRR5860618	cascade_4_1	tei
+SRR5860572	cascade_4_2	tei
+SRR5860617	cascade_4_3	tei
+SRR5860621	House_Bioko	tei
+SRR5860571	La_Lope_Gabon	tei
+SRR5860620	Selinda	tei
+SRR5860619	Zimbabwe	tei
